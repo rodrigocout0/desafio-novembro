@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho de Compras</title>
+    <title>LojaExercicioCampinho</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <h1>A GRANDE LOJINHA</h1>
+        <button id="carrinho-btn" disabled>Carrinho (0)</button>
+    </header>
 
-    <script src="./index.js"></script> <!-- Conectado ao arquivo index.js -->
+    <main>
+        <div id="produtos-container" class="produtos-container"></div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-conteudo">
+            <h2>Carrinho</h2>
+            <ul id="lista-carrinho"></ul>
+            <p id="total-compra">Total: R$ 0.00</p>
+            <button id="finalizar-compra">Finalizar Compra</button>
+            <button id="fechar-modal">Fechar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 | A GRANDE LOJINHA | Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
